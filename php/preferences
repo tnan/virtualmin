@@ -1,0 +1,47 @@
+Package: *yac
+Pin: release *
+Pin-Priority: -1
+
+Package: *gmagick
+Pin: release *
+Pin-Priority: -1
+
+Package: *letodms-lucene
+Pin: release *
+Pin-Priority: -1
+
+Package: *horde-webmail
+Pin: release *
+Pin-Priority: -1
+
+Package: *horde-groupware
+Pin: release *
+Pin-Priority: -1
+
+Package: *xcache
+Pin: release *
+Pin-Priority: -1
+
+Package: *phalcon
+Pin: release *
+Pin-Priority: -1
+
+Package: *phalcon3
+Pin: release *
+Pin-Priority: -1
+
+Package: *cassandra
+Pin: release *
+Pin-Priority: -1
+
+Package: *libsodium
+Pin: release *
+Pin-Priority: -1
+
+Package: *uopz
+Pin: release *
+Pin-Priority: -1
+
+Package: php-recode
+Pin: release *
+Pin-Priority: -1
