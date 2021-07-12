@@ -1,3 +1,4 @@
+cd /root/
 add-apt-repository ppa:ondrej/php -y
 apt update
 apt upgrade -y
