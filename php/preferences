@@ -5,3 +5,15 @@ Pin-Priority: -1
 Package: *gmagick
 Pin: release *
 Pin-Priority: -1
+
+Package: *horde-groupware
+Pin: release *
+Pin-Priority: -1
+
+Package: *horde-webmail
+Pin: release *
+Pin-Priority: -1
+
+Package: *letodms-lucene
+Pin: release *
+Pin-Priority: -1
