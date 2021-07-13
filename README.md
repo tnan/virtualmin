@@ -1,1 +1,1 @@
-cd /root/ && wget https://raw.githubusercontent.com/tnan/virtualmin/master/virtualmin-mariadb.sh -O virtualmin-mariadb.sh && chmod +x virtualmin-mariadb.sh && ./virtualmin-mariadb.sh
+cd /root/ && wget https://raw.githubusercontent.com/tnan/virtualmin/master/virtualmin-install-mariadb.sh -O virtualmin-install-mariadb.sh && chmod +x virtualmin-install-mariadb.sh && ./virtualmin-install-mariadb.sh
