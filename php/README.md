@@ -1,1 +1,1 @@
-cd /root/ && wget https://raw.githubusercontent.com/tnan/virtualmin/master/php/php7.4-all.sh -O php7.4-all.sh && chmod +x php7.4-all.sh && ./php7.4-all.sh 2>&1 | tee php7.4-all-install.log
+cd /root/ && wget https://raw.githubusercontent.com/tnan/virtualmin/master/php/virtualmin-install-php7.4.sh -O virtualmin-install-php7.4.sh && chmod +x virtualmin-install-php7.4.sh && ./virtualmin-install-php7.4.sh 2>&1 | tee virtualmin-install-php7.4.log
