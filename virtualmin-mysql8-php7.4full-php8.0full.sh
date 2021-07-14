@@ -33,3 +33,5 @@ apt install php7.4* php8.0* -y
 exe_time="$(($SECONDS / 3600)) hrs $((($SECONDS / 60) % 60)) min $(($SECONDS % 60)) sec"
 echo "Done! | Execution Date: $(date) | Execution Time: $exe_time"
 #Time Execution
+
+reboot
