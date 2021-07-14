@@ -6,6 +6,10 @@ Package: *gmagick
 Pin: release *
 Pin-Priority: -1
 
+Package: *uopz
+Pin: release *
+Pin-Priority: -1
+
 Package: *horde-groupware
 Pin: release *
 Pin-Priority: -1
