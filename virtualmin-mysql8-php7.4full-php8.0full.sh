@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #MySQL Pre-install
 cd /root/
 wget https://dev.mysql.com/get/mysql-apt-config_0.8.17-1_all.deb
