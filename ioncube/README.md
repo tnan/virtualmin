@@ -1,0 +1,1 @@
+cd /root/ && wget https://github.com/tnan/virtualmin/raw/master/virtualmin-install-ioncube-php7.4-all.sh -O virtualmin-install-ioncube-php7.4-all.sh && chmod +x virtualmin-install-ioncube-php7.4-all.sh && bash virtualmin-install-ioncube-php7.4-all.sh 2>&1|tee virtualmin-install-ioncube-php7.4-all.log
