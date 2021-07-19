@@ -9,6 +9,7 @@ DEBIAN_FRONTEND=noninteractive dpkg -i mysql-apt-config_0.8.17-1_all.deb
 #PHP Pre-install
 cd /root/
 add-apt-repository ppa:ondrej/php -y
+apt update
 #PHP Pre-install
 
 #Update/Upgrade
