@@ -21,3 +21,7 @@ Pin-Priority: -1
 Package: *letodms-lucene
 Pin: release *
 Pin-Priority: -1
+
+Package: *phalcon3
+Pin: release *
+Pin-Priority: -1
