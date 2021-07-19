@@ -26,7 +26,7 @@ printf 'y\nvirtualmin.virtualmin.virtualmin\n' | sudo /bin/sh install.sh
 #Virtualmin Install
 
 #PHP Install
-apt install php7.2-{cli,curl,pdo,fpm,zip,gd,xml,mysql,cgi} php7.3-{cli,curl,pdo,fpm,zip,gd,xml,mysql,cgi} php7.4-{cli,curl,pdo,fpm,zip,gd,xml,mysql,cgi} php8.0-{cli,curl,pdo,fpm,zip,gd,xml,mysql,cgi} -y
+apt install php7.4-{cli,curl,pdo,fpm,zip,gd,xml,mysql,cgi} php8.0-{cli,curl,pdo,fpm,zip,gd,xml,mysql,cgi} -y
 #PHP Install
 
 #Systemd Config
