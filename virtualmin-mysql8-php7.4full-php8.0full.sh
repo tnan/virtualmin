@@ -2,8 +2,8 @@
 
 #MySQL Pre-install
 cd /root/
-wget https://dev.mysql.com/get/mysql-apt-config_0.8.17-1_all.deb
-DEBIAN_FRONTEND=noninteractive dpkg -i mysql-apt-config_0.8.17-1_all.deb
+wget https://dev.mysql.com/get/mysql-apt-config_0.8.20-1_all.deb
+DEBIAN_FRONTEND=noninteractive dpkg -i mysql-apt-config_0.8.20-1_all.deb
 #MySQL Pre-install
 
 #PHP Pre-install
