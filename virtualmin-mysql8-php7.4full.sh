@@ -21,7 +21,7 @@ apt autoremove -y
 #Virtualmin Install
 cd /root/
 wget http://software.virtualmin.com/gpl/scripts/install.sh
-printf 'y\nvirtualmin.aione.co\n' | sudo /bin/sh install.sh
+printf 'y\nvirtualmin.aio.ws\n' | sudo /bin/sh install.sh
 #Virtualmin Install
 
 #PHP Install
