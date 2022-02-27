@@ -1,6 +1,6 @@
 #!/bin/bash
 cd /root/
 
-wget https://github.com/tnan/virtualmin/raw/master/ubuntu20/virtualmin.sh
+wget https://github.com/tnan/virtualmin/raw/master/ubuntu20/virtualmin.sh -O /root/virtualmin.sh
 chmod +x /root/virtualmin.sh
 sh /root/virtualmin.sh 2>&1|tee /root/virtualmin.log
