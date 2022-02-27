@@ -1,8 +1,8 @@
 #!/bin/bash
 cd /root/
 
-apt update
-apt upgrade -y
+apt update 2>&1|tee /root/update.log
+apt upgrade -y 2>&1|tee /root/upgrade.log
 apt install -f -y
 apt autoremove -y
 apt autoclean -y
