@@ -1,17 +1,14 @@
 #!/bin/bash
 cd /root/
 
-#Update Upgrade
 apt update
 apt upgrade -y
 apt install -f -y
 apt autoremove -y
 apt autoclean -y
-#Update Upgrade
 
-#Reboot
+wget https://github.com/tnan/virtualmin/raw/master/ubuntu20/rc.local_release-upgrade -O /etc/rc.local
 chmod +x /etc/rc.local
 systemctl enable rc-local
-echo '#!/bin/bash' > /etc/rc.local
-echo 'sh /root/update.sh' >> /etc/rc.local
-#Reboot
+
+reboot
