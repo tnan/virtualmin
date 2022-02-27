@@ -25,9 +25,9 @@ printf 'y\nvirtualmin.aio.ws\n' | sudo /bin/sh install.sh
 #Virtualmin Install
 
 #PHP Install
-wget https://raw.githubusercontent.com/tnan/virtualmin/master/php/preferences -O /etc/apt/preferences
-apt install php7.4* -y
-rm /etc/apt/preferences
+#wget https://raw.githubusercontent.com/tnan/virtualmin/master/php/preferences -O /etc/apt/preferences
+#apt install php7.4* -y
+#rm /etc/apt/preferences
 #PHP Install
 
 #Systemd Config
