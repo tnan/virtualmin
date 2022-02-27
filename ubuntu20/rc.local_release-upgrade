@@ -1,0 +1,6 @@
+#!/bin/bash
+cd /root/
+
+DEBIAN_FRONTEND=noninteractive do-release-upgrade -f DistUpgradeViewNonInteractive 2>&1|tee /root/release-upgrade.log
+
+wget 
