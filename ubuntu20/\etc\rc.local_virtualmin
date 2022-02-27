@@ -4,7 +4,7 @@ cd /root/
 #Virtualmin Install
 cd /root/
 wget http://software.virtualmin.com/gpl/scripts/install.sh
-sh install.sh -f -n virtualmin.virtualmin.virtualmin
+sh /root/install.sh -f -n virtualmin.virtualmin.virtualmin
 #Virtualmin Install
 
 #PHP Install
