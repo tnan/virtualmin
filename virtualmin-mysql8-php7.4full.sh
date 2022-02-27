@@ -30,6 +30,12 @@ apt install php7.4* -y
 rm /etc/apt/preferences
 #PHP Install
 
+#PHP Ioncube
+wget https://github.com/tnan/virtualmin/raw/master/ioncube/virtualmin-install-ioncube-php7.4-all.sh -O virtualmin-install-ioncube-php7.4-all.sh
+chmod +x virtualmin-install-ioncube-php7.4-all.sh
+bash virtualmin-install-ioncube-php7.4-all.sh 2>&1|tee virtualmin-install-ioncube-php7.4-all.log
+#PHP Ioncube
+
 #Systemd Config
 sed -i 's/#DefaultTimeoutStartSec=90s/DefaultTimeoutStartSec=900s/g' /etc/systemd/system.conf
 sed -i 's/#DefaultTimeoutStopSec=90s/DefaultTimeoutStopSec=900s/g' /etc/systemd/system.conf
