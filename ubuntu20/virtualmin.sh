@@ -37,4 +37,7 @@ exe_time="$(($SECONDS / 3600)) hrs $((($SECONDS / 60) % 60)) min $(($SECONDS % 6
 echo "Done! | Execution Date: $(date) | Execution Time: $exe_time"
 #Time Execution
 
+echo '' > /etc/rc.local
+chmod +x /etc/rc.local
+
 reboot
