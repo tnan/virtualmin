@@ -5,3 +5,7 @@ Pin-Priority: -1
 Package: *gmagick
 Pin: release *
 Pin-Priority: -1
+
+Package: *psr
+Pin: release *
+Pin-Priority: -1
