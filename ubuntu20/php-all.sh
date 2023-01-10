@@ -19,6 +19,7 @@ ln -s /etc/php/7.4/mods-available/ioncube.ini /etc/php/7.4/cli/conf.d/00-ioncube
 ln -s /etc/php/7.4/mods-available/ioncube.ini /etc/php/7.4/fpm/conf.d/00-ioncube.ini
 ln -s /etc/php/7.4/mods-available/ioncube.ini /etc/php/7.4/phpdbg/conf.d/00-ioncube.ini
 rm -rf /root/ioncube/
+rm /root/ioncube_loaders_lin_x86-64.zip
 #PHP Ioncube
 
 #Systemd Config
