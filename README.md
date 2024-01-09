@@ -10,7 +10,7 @@ apt update && apt install screen -y
 wget https://software.virtualmin.com/gpl/scripts/virtualmin-install.sh && sh virtualmin-install.sh -v -f -n hostname
 ```
 ```
-apt update && apt install screen -y %% screen -S virtualmin-install -d -m bash -c "apt update && apt install linux-image-extra-virtual -y && wget https://software.virtualmin.com/gpl/scripts/virtualmin-install.sh && sh virtualmin-install.sh -v -f -n hostname && reboot"
+apt update && apt install screen -y && screen -S virtualmin-install -d -m bash -c "apt update && apt install linux-image-extra-virtual -y && wget https://software.virtualmin.com/gpl/scripts/virtualmin-install.sh && sh virtualmin-install.sh -v -f -n hostname && reboot"
 ```
 ```
 regexp:/etc/postfix/list_unsub_header
