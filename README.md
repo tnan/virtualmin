@@ -7,8 +7,9 @@ cd /root/ && apt update 2>&1|tee update.log && apt upgrade -y 2>&1|tee upgrade.l
 wget https://software.virtualmin.com/gpl/scripts/virtualmin-install.sh && sh virtualmin-install.sh -v -f -n hostname
 
 apt update && apt install linux-image-extra-virtual -y && wget https://software.virtualmin.com/gpl/scripts/virtualmin-install.sh && sh virtualmin-install.sh -v -f -n hostname
-
+```
 regexp:/etc/postfix/list_unsub_header
+```
 ```
 /^Content-Type:/i PREPEND List-Unsubscribe: <mailto:user@example.com?subject=unsubscribe>
 ```
