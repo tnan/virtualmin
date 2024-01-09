@@ -10,4 +10,4 @@ apt update && apt install linux-image-extra-virtual -y && wget https://software.
 
 regexp:/etc/postfix/list_unsub_header
 
-/^Content-Type:/i PREPEND List-Unsubscribe: <mailto:user@example.com?subject=unsubscribe>
+<sup>/^Content-Type:/i PREPEND List-Unsubscribe: <mailto:user@example.com?subject=unsubscribe></sup>
