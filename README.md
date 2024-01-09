@@ -9,5 +9,6 @@ wget https://software.virtualmin.com/gpl/scripts/virtualmin-install.sh && sh vir
 apt update && apt install linux-image-extra-virtual -y && wget https://software.virtualmin.com/gpl/scripts/virtualmin-install.sh && sh virtualmin-install.sh -v -f -n hostname
 
 regexp:/etc/postfix/list_unsub_header
-`
-/^Content-Type:/i PREPEND List-Unsubscribe: <mailto:user@example.com?subject=unsubscribe>`
+```
+/^Content-Type:/i PREPEND List-Unsubscribe: <mailto:user@example.com?subject=unsubscribe>
+```
