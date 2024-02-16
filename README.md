@@ -7,7 +7,7 @@ cd /root/ && apt update 2>&1|tee update.log && apt upgrade -y 2>&1|tee upgrade.l
 apt update && apt install screen -y
 ```
 ```
-apt update && apt install linux-image-extra-virtual -y && reboot
+apt update && DEBIAN_FRONTEND=noninteractive apt install linux-image-extra-virtual -y && reboot
 ```
 ```
 wget https://software.virtualmin.com/gpl/scripts/virtualmin-install.sh && sh virtualmin-install.sh -v -f -n hostname
