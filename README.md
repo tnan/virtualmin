@@ -21,3 +21,48 @@ regexp:/etc/postfix/list_unsub_header
 ```
 /^Content-Type:/i PREPEND List-Unsubscribe: <mailto:user@example.com?subject=unsubscribe>
 ```
+---
+Step-by-step fix
+
+    Disable the enterprise repositories
+    Comment out the lines in the corresponding .list files.
+```
+    sed -i 's/^deb /#deb /' /etc/apt/sources.list.d/pve-enterprise.list 2>/dev/null
+    sed -i 's/^deb /#deb /' /etc/apt/sources.list.d/ceph.list 2>/dev/null
+```
+    If the files don't exist, skip the errors – they are not critical.
+
+    Add the no-subscription repositories
+    Create new files with the correct repository URLs.
+```
+    echo "deb http://download.proxmox.com/debian/pve bookworm pve-no-subscription" > /etc/apt/sources.list.d/pve-no-subscription.list
+    echo "deb http://download.proxmox.com/debian/ceph-quincy bookworm no-subscription" > /etc/apt/sources.list.d/ceph-no-subscription.list
+```
+---
+
+Installation Steps
+
+    Install Prerequisites: First, install curl and gnupg2, which are needed to download and verify the Webmin repository.
+```
+    apt install curl gnupg2 -y
+```
+    Download and Run the Setup Script: Webmin isn't in the default Debian repositories, so you'll use the official setup-repos.sh script to add its repository. This is the recommended approach.
+```
+    curl -o setup-repos.sh https://raw.githubusercontent.com/webmin/webmin/master/setup-repos.sh
+    bash setup-repos.sh
+```
+    When prompted, type y and press Enter to proceed with the repository installation.
+
+    Install Webmin: After the repository is added, update your package list and install Webmin along with its recommended packages.
+```
+    apt update
+    apt install webmin --install-recommends -y
+```
+    Verify Webmin is Running: The installation process should automatically start the Webmin service. You can confirm it's active with:
+```
+    systemctl status webmin
+```
+    If it's not running, you can manually start it for the first time:
+```
+    systemctl enable --now webmin
+```
