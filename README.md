@@ -63,3 +63,8 @@ If it's not running, you can manually start it for the first time:
 ```
 systemctl enable --now webmin
 ```
+
+```
+sed -i 's/#DefaultTimeoutStartSec=90s/DefaultTimeoutStartSec=900s/g' /etc/systemd/system.conf
+sed -i 's/#DefaultTimeoutStopSec=90s/DefaultTimeoutStopSec=900s/g' /etc/systemd/system.conf
+```
