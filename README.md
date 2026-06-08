@@ -68,3 +68,7 @@ systemctl enable --now webmin
 sed -i 's/#DefaultTimeoutStartSec=90s/DefaultTimeoutStartSec=900s/g' /etc/systemd/system.conf
 sed -i 's/#DefaultTimeoutStopSec=90s/DefaultTimeoutStopSec=900s/g' /etc/systemd/system.conf
 ```
+
+```
+apt-cache search --names-only '^php8.3-' | awk '{print $1}' | grep -v -E '^(php8.3-gmagick|php8.3-yac)' | xargs apt install -y 2>&1 | tee /var/log/php8.3-install.log
+```
