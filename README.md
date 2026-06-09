@@ -76,3 +76,10 @@ apt install -y $(apt-cache search --names-only '^php8.3-' | awk '{print $1}' | g
 phpdismod ds
 phpdismod sass
 ```
+```
+regexp:/etc/postfix/header_checks
+```
+```
+/^From:/i PREPEND List-Unsubscribe: <mailto:unsubscribe@aiows.com>, <https://aiows.com/unsubscribe>
+/^From:/i PREPEND List-Unsubscribe-Post: List-Unsubscribe=One-Click
+```
