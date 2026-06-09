@@ -72,3 +72,7 @@ sed -i 's/#DefaultTimeoutStopSec=90s/DefaultTimeoutStopSec=900s/g' /etc/systemd/
 ```
 apt install -y $(apt-cache search --names-only '^php8.3-' | awk '{print $1}' | grep -v -E '^(php8.3-gmagick|php8.3-yac)') 2>&1 | tee /var/log/php8.3-install.log
 ```
+```
+phpdismod ds
+phpdismod sass
+```
